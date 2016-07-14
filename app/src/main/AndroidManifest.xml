@@ -7,10 +7,22 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:windowSoftInputMode="adjustPan"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Spklogin"/>
-        <activity android:name=".Userlogin"/>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".Spklogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".Userlogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SpkList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
