@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     android:weightSum="10">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.1"
-        android:layout_margin="16dp"
         android:orientation="horizontal"
         android:weightSum="5">
 
@@ -22,7 +22,7 @@
             <com.meg7.widget.CustomShapeImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/sample"
+                android:src="@drawable/sample2"
                 app:shape="circle" />
 
         </LinearLayout>
@@ -34,7 +34,7 @@
             android:layout_marginLeft="16dp"
             android:layout_weight="3"
             android:gravity="center_vertical"
-            android:text="Mr.XXX YYY\nemail:xxx@hotmail.com"
+            android:text="Mr.ABC DEF\nemail:abc@hotmail.com"
             android:textSize="14sp" />
 
         <Button
@@ -54,39 +54,36 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:layout_weight="8.9"
+        android:layout_weight="6"
         android:orientation="vertical">
-        <TextView
+
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Topic"
-            android:textSize="20sp"
-            android:textColor="#000000"
-            android:gravity="center_horizontal"/>
+            android:layout_marginTop="16dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/edittext_rounded_corners"
+            android:drawableLeft="@mipmap/ic_search_black_24dp"
+            android:drawablePadding="30px"
+            android:hint="Search"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch" />
 
-            <com.skyfishjy.library.RippleBackground
-               android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/content"
-                app:rb_color="#484848"
-                app:rb_radius="32dp"
-                app:rb_rippleAmount="4"
-                app:rb_duration="3000"
-                app:rb_scale="6">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp">
 
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_centerInParent="true"
-                    android:id="@+id/centerImage"
-                    android:src="@mipmap/spk"/>
-            </com.skyfishjy.library.RippleBackground>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listview1">
 
+
+            </ListView>
 
         </LinearLayout>
-
-
-
     </LinearLayout>
 
+</LinearLayout>
